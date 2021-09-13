@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style/all.css" type="text/css">
+    <link rel="stylesheet" href="./Style/Style.css" type="text/css">
+    <title>Interior Consultant Master</title>
+</head>
+<body>
+    <header class="top-container">
+       <div> <div class="interior-button">
+           <p>THIS INTERIOR</p>
+        </div>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collection</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section>
+    <aside class="left-container">
+        <div class="left-sub-con">
+            <h1>Modern interior</h1>
+            <p>
+                A full-Service residential &<br>
+                commercial interior design and<br> 
+                staging company offering<br>
+                professional organizing &<br>
+                eco-services.
+            </p>
+            <div>
+                <a>Read more </a><span><i class="fas fa-long-arrow-alt-right"></i></span>
+            </div>
+        </div>
+    </aside>
+    <aside class="right-container">
+        <article class="big-con">
+        <div class="info-con">
+            <div class="user2-pic">
+                <img src="./img/photo2.png" alt="Aliza Webber">
+            </div>
+            <div class="name-refs">
+                <p>Aliza Webber</p>
+                <p>Interior designer</p>
+            </div>
+        </div>
+        <div class="rec">
+            Designed in 2020 by <br>
+            Aliza Webber
+        </div>
+        </article>
+    </aside>
+</section>
+<div class="Hamburger-menu">
+    <div class="first"></div>
+    <div class="second"></div>
+    <div class="third"></div>
+</div>
+<footer>
+    IFEOLUWA @ DevChallenges.io
+</footer>
+</body>
+<script>
+    var Menu = document.querySelector(".Hamburger-menu");
+    var blur = document.querySelector("section");
+    var navOpen = document.querySelector('.nav-menu');
+    var Ham = document.querySelectorAll(".Hamburger-menu div")
+    Menu.addEventListener("click", ()=>{  
+    navOpen.classList.toggle("scale");
+    Ham[0].classList.toggle('upper');
+   
+    Ham[1].classList.toggle('middle');
+    Ham[2].classList.toggle('bottom');
+    blur.classList.toggle("blur");
+}
+    )
+</script>
+</html>
